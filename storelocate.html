@@ -15,6 +15,24 @@
     </header>
 
     <section>
+        <div class="mid" id="mid-top">
+            <h2>Search a Location</h2>
+            <form method="GET" action="https://onlinegrocerystore.herokuapp.com/searchedlocation/">
+            <fieldset>
+                <legend>Enter Location:</legend>
+                <input type="text" name="locationentered" id="locationQuery"/>
+                <input type="submit" value="Search Store"/>
+            </fieldset>
+            </form>
+        </div>
+        <div class="mid" id="mid-bottom">
+            <h2>To locate your position press the button below</h2>
+            <fieldset>
+                <input type="button" value="Locate Me" onclick="getLocation()"/>
+                <p id="demo"></p>
+            </fieldset>
+        </div>
+
 
     </section>
 
@@ -22,7 +40,7 @@
         &copy;OnlineGroceryStore&TRADE;
 
     </footer>
-    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!--<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>-->
     <script type="text/javascript" src="js/storelocate.js"></script>
 </div>
 

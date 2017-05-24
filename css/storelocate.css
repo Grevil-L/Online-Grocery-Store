@@ -1,6 +1,7 @@
 html, body{
     padding: 0;
     margin:0;
+    background: #f4ffeb;
 }
 
 .container{
@@ -10,3 +11,10 @@ html, body{
     padding: 3px;
 }
 
+fieldset{
+    border: 0;
+}
+
+.mid{
+
+}
