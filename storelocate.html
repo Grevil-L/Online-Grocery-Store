@@ -11,34 +11,37 @@
 <div class="container">
 
     <header>
+        <div id="top" class="hf">
         <h1>Online Grocery Store</h1>
+        </div>
     </header>
 
     <section>
-        <div class="mid" id="mid-top">
+        <div class="mid" id="mid-left">
             <h2>Search a Location</h2>
-            <form method="GET" action="https://onlinegrocerystore.herokuapp.com/searchedlocation/">
-            <fieldset>
-                <legend>Enter Location:</legend>
-                <input type="text" name="locationentered" id="locationQuery"/>
+            <form name="searchform" method="GET" action="https://onlinegrocerystore.herokuapp.com/searchedlocation/" onsubmit="return validateForm()">
+
+                <label>Enter Location:</label>
+                <input type="text" name="locationentered" id="locationQuery" placeholder=" eg. Chico Cafe 1"/><br>
                 <input type="submit" value="Search Store"/>
-            </fieldset>
+
             </form>
         </div>
-        <div class="mid" id="mid-bottom">
+        <div class="mid" id="mid-right">
             <h2>To locate your position press the button below</h2>
-            <fieldset>
+
                 <input type="button" value="Locate Me" onclick="getLocation()"/>
                 <p id="demo"></p>
-            </fieldset>
+
         </div>
 
 
     </section>
 
     <footer>
+        <div id="bottom" class="hf">
         &copy;OnlineGroceryStore&TRADE;
-
+        </div>
     </footer>
     <!--<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>-->
     <script type="text/javascript" src="js/storelocate.js"></script>

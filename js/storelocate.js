@@ -16,3 +16,11 @@ function showPosition(position) {
     x.innerHTML = "Latitude: " + position.coords.latitude +
         "<br>Longitude: " + position.coords.longitude;
 }
+
+function validateForm() {
+    var x = document.forms["searchform"]["locationentered"].value;
+    if (x == "") {
+        alert("Please enter a search term");
+        return false;
+    }
+}
