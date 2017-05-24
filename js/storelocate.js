@@ -10,12 +10,12 @@ function getLocation() {
     } else {
         x.innerHTML = "Geolocation is not supported by this browser.";
     }
-}
+};
 
 function showPosition(position) {
     x.innerHTML = "Latitude: " + position.coords.latitude +
         "<br>Longitude: " + position.coords.longitude;
-}
+};
 
 function validateForm() {
     var x = document.forms["searchform"]["locationentered"].value;
@@ -23,4 +23,5 @@ function validateForm() {
         alert("Please enter a search term");
         return false;
     }
-}
+};
+
